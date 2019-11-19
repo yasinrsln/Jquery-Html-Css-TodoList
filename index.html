@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <title>Yapılacaklar Listesi</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, ;
+shrink-to-fit=no">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+   </head>
+   <body style="margin:10px">
+      <div class="container">
+         <div class="row justify-content-center">
+            <div class="col-sm-12" >
+               <div id="tabloKontrol" class="text-center">
+                  <h5 class="text-danger">Liste oluşturulmamış, oluşturmak ister misin?</h5>
+                  <button id="tabloOlustur" type="button" class="btn btn-primary ">Evet</button>
+               </div>
+               <div id="kayitDefteri">
+                  <div class="row">
+                     <div class="col-12 text-right">
+                        <button id="tabloSil" type="button" class="btn btn-danger ">Listeyi Sil</button>
+                     </div>
+                  </div>
+                  <br>
+                  <div class="row " style="max-height: 80vh !important; overflow-y:scroll">
+                     <table class="table table-hover table-responsive">
+                        <thead>
+                           <tr>
+                              <th>#</th>
+                              <th>Yapılacak İş</th>
+                              <th>Tarih</th>
+                              <th>Yeni Değer</th>
+                              <th></th>
+                           </tr>
+                        </thead>
+                        <tbody id="tablo">
+                        </tbody>
+                     </table>
+                  </div>
+                  <br>
+                  <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                               <form>
+                                  <div class="row">
+                                     <div class="col-5">
+                                        <input type="text" id="notMetini" class="form-control" placeholder="Not metini">
+                                     </div>
+                                     <div class="col-2">
+                                        <button type="button" id="notKaydet" class="btn btn-primary">Yeni Kayıt Ekle</button>
+                                     </div>
+                                  </div>
+                               </form>
+                            </div>
+                         </div>
+                    </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" > </script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"> </script>
+      <script src="newscript.js"></script>
+   </body>
+</html>
